@@ -1,0 +1,58 @@
+<div class="chat-container">
+    <!-- Filigrane -->
+    <div id="watermark">Cliquez ici</div>
+    
+    <!-- Menu déroulant -->
+    <div id="dropdown-menu">
+      <a href="#"><p>papa</p></a>
+      <a href="#"><p>maman</p></i></a>
+      <a href="#"><p>toto</p></i></a>
+      <a href="#"><p>nono</p></a>
+    </div>
+  </div>
+<style>
+    .chat-container {
+  position: relative;
+}
+
+#watermark {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 8px;
+  background-color: rgba(0, 0, 0, 0.3);
+  color: white;
+  cursor: pointer;
+}
+
+#dropdown-menu {
+  display: none;
+}
+
+#dropdown-menu a {
+  display: block;
+  padding: 8px;
+  color: black;
+  text-decoration: none;
+}
+
+#dropdown-menu a:hover {
+  background-color: lightgray;
+}
+
+</style>  
+
+<script>
+    // Lorsque vous cliquez sur le filigrane
+document.getElementById("watermark").addEventListener("click", function() {
+  var dropdownMenu = document.getElementById("dropdown-menu");
+  
+  // Afficher ou masquer le menu déroulant
+  if (dropdownMenu.style.display === "none") {
+    dropdownMenu.style.display = "block";
+  } else {
+    dropdownMenu.style.display = "none";
+  }
+});
+
+</script>

@@ -1,0 +1,89 @@
+<h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi explicabo tempora aut facilis iusto temporibus fuga. Tempore qui, consequuntur corporis fugit, inventore consectetur excepturi ex facilis dolore sit cum ad?</h1>
+<h1>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem, nam! Numquam eum repudiandae pariatur quisquam tempora sit, vel qui! Incidunt iusto ratione, non quibusdam officiis iste ipsam dolore quis nam?</h1>
+<div class="chat-container">
+    <div class="chat">
+      <!-- Contenu de votre chat -->
+    </div>
+    <div id="filigrane" onclick="showMenu()">ma</div>
+    <div id="menu" class="hidden">
+      <div class="menu-item">
+        <img src="icone-son.png" alt="Son">
+        <span>Son</span>
+      </div>
+      <div class="menu-item">
+        <img src="icone-video.png" alt="Vidéo">
+        <span>Vidéo</span>
+      </div>
+      <div class="menu-item">
+        <img src="icone-images.png" alt="Images">
+        <span>Images</span>
+      </div>
+      <div class="menu-item">
+        <img src="icone-documents.png" alt="Documents">
+        <span>Documents</span>
+      </div>
+    </div>
+  </div>
+<style>
+    .chat-container {
+  position: relative;
+}
+
+#filigrane {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 20px;
+  height: 20px;
+  background: url(filigrane.png) center/cover no-repeat;
+  cursor: pointer;
+}
+
+#menu {
+  position: absolute;
+  top: -120px;
+  right: 0;
+  width: 150px;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+  padding: 10px;
+}
+
+.menu-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.menu-item img {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+}
+
+.hidden {
+  display: none;
+}
+
+</style>  
+<script>
+    function showMenu() {
+  var menu = document.getElementById("menu");
+  menu.classList.toggle("hidden");
+}
+function showMenu() {
+  var menu = document.getElementById("menu");
+  menu.classList.toggle("hidden");
+}
+
+
+
+function redirectToImages() {
+  // Effectuer la redirection vers le dossier des images
+  window.location.href = "chemin/vers/votre/dossier/images";
+}
+
+
+</script>
